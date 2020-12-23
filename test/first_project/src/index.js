@@ -5,11 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-
-// ② 4の項目で解説
 import App from './containers/App'
-
-// ③ 次の項目で解説
 import reducer from './reducers/reducer'
 
 const store = createStore(reducer);
