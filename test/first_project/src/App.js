@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from './navbar';
+import About from './About';
+
 
 function App() {
   return (
@@ -18,6 +23,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <Router>
+        <div>
+          <Navbar /><hr/>
+          <Route path='/About' render={ () => <About name={'Tom'}/> }/>
+        </div>
+      </Router>
     </div>
   );
 }
